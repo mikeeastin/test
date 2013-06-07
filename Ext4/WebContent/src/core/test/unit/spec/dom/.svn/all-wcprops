@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/core/test/unit/spec/dom
+END
+CompositeElementLite.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/core/test/unit/spec/dom/CompositeElementLite.js
+END
+DomHelper.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/core/test/unit/spec/dom/DomHelper.js
+END
+Element.static.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/core/test/unit/spec/dom/Element.static.js
+END
+Element.style.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/core/test/unit/spec/dom/Element.style.js
+END
+Element.insertion.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/core/test/unit/spec/dom/Element.insertion.js
+END
+Element.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/core/test/unit/spec/dom/Element.js
+END
+Element.traversal.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/core/test/unit/spec/dom/Element.traversal.js
+END

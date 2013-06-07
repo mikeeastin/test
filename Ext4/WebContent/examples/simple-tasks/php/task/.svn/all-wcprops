@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/php/task
+END
+read.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/php/task/read.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/php/task/update.php
+END
+delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/php/task/delete.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/php/task/create.php
+END

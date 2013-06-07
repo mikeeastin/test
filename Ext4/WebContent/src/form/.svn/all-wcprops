@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form
+END
+FieldContainer.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/FieldContainer.js
+END
+Label.js
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/Label.js
+END
+Panel.js
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/Panel.js
+END
+RadioGroup.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/RadioGroup.js
+END
+RadioManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/RadioManager.js
+END
+Basic.js
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/Basic.js
+END
+Labelable.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/Labelable.js
+END
+FieldAncestor.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/FieldAncestor.js
+END
+CheckboxGroup.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/CheckboxGroup.js
+END
+CheckboxManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/CheckboxManager.js
+END
+FieldSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/71/trunk/Ext4/WebContent/src/form/FieldSet.js
+END

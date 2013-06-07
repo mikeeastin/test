@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/db
+END
+schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/db/schema.sql
+END
+simple_tasks.db
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/db/simple_tasks.db
+END

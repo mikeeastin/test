@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="../../../extjs-4.1.1/resources/css/ext-all.css"  />
+<script type="text/javascript" src="../../../extjs-4.1.1/bootstrap.js"></script>
+<script type="text/javascript" src="../../../extjs-4.1.1/locale/ext-lang-zh_CN.js"></script>
+
+<script type="text/javascript">
+
+         Ext.onReady(function(){
+		 var config={
+           title:'HelloWorld',
+           msg:'确实有点不一样的HelloWorld'
+  };
+  Ext.MessageBox.show(config);
+                 //  Ext.MessageBox.alert('hello mike','Hello Worldss');
+         });
+</script>

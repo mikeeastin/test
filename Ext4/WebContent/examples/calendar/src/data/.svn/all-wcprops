@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/calendar/src/data
+END
+Calendars.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/calendar/src/data/Calendars.js
+END
+CalendarMappings.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/calendar/src/data/CalendarMappings.js
+END
+MemoryCalendarStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/calendar/src/data/MemoryCalendarStore.js
+END
+EventMappings.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/calendar/src/data/EventMappings.js
+END
+EventModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/calendar/src/data/EventModel.js
+END
+CalendarModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/calendar/src/data/CalendarModel.js
+END
+Events.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/calendar/src/data/Events.js
+END
+MemoryEventStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/calendar/src/data/MemoryEventStore.js
+END

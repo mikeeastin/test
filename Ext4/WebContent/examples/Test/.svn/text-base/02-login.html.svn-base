@@ -1,0 +1,40 @@
+<link rel="stylesheet" type="text/css" href="../../../extjs-4.1.1/resources/css/ext-all.css"  />
+<script type="text/javascript" src="../../../extjs-4.1.1/bootstrap.js"></script>
+<script type="text/javascript" src="../../../extjs-4.1.1/locale/ext-lang-zh_CN.js"></script>
+
+<script type="text/javascript">
+Ext.onReady(function(){
+        Ext.QuickTips.init();
+        var loginForm =Ext.create('Ext.form.Panel', {
+            title:'Ext.form.field.Text示例',
+            bodyStyle:'padding:5 5 5 5',//表单边距
+            frame : true,
+            height:150,
+            width:300,        
+            renderTo:Ext.getBody(),            
+            items:[{
+                    fieldLabel : '用户名',
+                    name : 'userName',
+                    xtype:'textfield',
+                    selectOnFocus : true,//得到焦点时自动选择文本
+                    //验证电子邮件格式的正则表达式
+                    regex : /^([\w]+)(.[\w]+)*@([\w-]+\.){1,5}([A-Za-z]){2,4}$/,
+                    regexText:'格式错误'//验证错误之后的提示信息,
+					 
+                },{
+                    name : 'password',
+                    xtype:'textfield',
+                    fieldLabel : '密码',
+                    inputType : 'password'//设置输入类型为password
+					
+                },
+            ],
+            buttons:[{
+                text : '登陆',
+                handler : function(){
+                    loginForm.form.setValues({userName:'user@com.cn',password:'123456',name:'aaa'});
+                }
+            }]
+        });
+    });
+</script>

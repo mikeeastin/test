@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/app/view/tasks
+END
+Grid.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/app/view/tasks/Grid.js
+END
+Form.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/app/view/tasks/Form.js
+END
+ReminderWindow.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/app/view/tasks/ReminderWindow.js
+END
+ContextMenu.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/app/view/tasks/ContextMenu.js
+END
+DefaultTimeWindow.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/app/view/tasks/DefaultTimeWindow.js
+END
+EditWindow.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/71/trunk/Ext4/WebContent/examples/simple-tasks/app/view/tasks/EditWindow.js
+END
