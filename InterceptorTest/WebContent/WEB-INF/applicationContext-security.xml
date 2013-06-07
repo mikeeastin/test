@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+    xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/security
+     http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+
+
+    <http auto-config="true" access-denied-page="/403.jsp"><!-- 当访问被拒绝时，会转到403.jsp -->
+        <intercept-url pattern="resources/css/*"  />
+        <intercept-url pattern="resources/images/*" />
+        <intercept-url pattern="resources/js/*"  />
+        <intercept-url pattern="login.jsp"  />
+
+        <session-management session-fixation-protection="none">
+            <concurrency-control />
+        </session-management>
+
+        <form-login login-page="/login.jsp"
+            authentication-failure-url="/login.jsp?error=true"
+            default-target-url="/index" />
+        <!-- logout-success-url:成功注销后跳转到的页面; -->
+        <logout logout-success-url="/login.jsp" />
+        <http-basic />
+    </http>
+    <!-- 连接池.我spring配置文件中配的有.所以这里就注掉了. <beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <beans:property name="driverClassName" value="com.mysql.jdbc.Driver"/> <beans:property
+        name="url" value="jdbc:mysql://localhost/demo"/> <beans:property name="username"
+        value="root"/> <beans:property name="password" value="root"/> </beans:bean> -->
+
+    <!--认证管理器，实现用户认证的入口，主要实现UserDetailsService接口即可 -->
+    <authentication-manager>
+        <authentication-provider>
+            <!-- 密码加密方式. 常用的有md5 和 sha. salt-source:忘记了.. 手头api关了,网速卡就不上网查了. 类似在md5上又加了一层.
+                放置暴力破解. 追加安全性. <password-encoder hash="md5"> <salt-source user-property="username"/>
+                </password-encoder> -->
+            <!-- 注入dataSource验证数据库中的用户名.密码.账号状态.和权限相关; <jdbc-user-service data-source-ref="dataSource"
+                users-by-username-query="select username,password,enabled from user where
+                username = ? and enabled = 1" authorities-by-username-query="select u.username,r.name
+                from user u join user_role ur on u.uid = ur.uid join role r on r.rid = ur.rid
+                where u.username = ?" /> -->
+            <!--使用固定的用户名和密码及权限来做验证. -->
+            <user-service>
+                <user name="admin" password="admin" authorities="ROLE_USER, ROLE_ADMIN" />
+                <user name="user" password="user" authorities="ROLE_USER" />
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+    <!-- 一个自定义的filter，必须包含 authenticationManager,accessDecisionManager,securityMetadataSource三个属性，
+        我们的所有控制将在这三个类中实现，解释详见具体配置
+    <beans:bean id="myFilter"
+        class="com.robin.erp.fwk.security.MyFilterSecurityInterceptor">
+        <beans:property name="authenticationManager" ref="authenticationManager" />
+        <beans:property name="accessDecisionManager" ref="myAccessDecisionManagerBean" />
+        <beans:property name="securityMetadataSource" ref="securityMetadataSource" />
+    </beans:bean>
+ -->
+    <!-- <beans:bean id="myUserDetailService" class="com.robin.erp.fwk.security.MyUserDetailService"
+        /> 访问决策器，决定某个用户具有的角色，是否有足够的权限去访问某个资源 <beans:bean id="myAccessDecisionManagerBean"
+        class="com.robin.erp.fwk.security.MyAccessDecisionManager"> </beans:bean>
+        资源源数据定义，即定义某一资源可以被哪些角色访问 <beans:bean id="securityMetadataSource" class="com.robin.erp.fwk.security.MyInvocationSecurityMetadataSource"
+        /> -->
+</beans:beans>
+

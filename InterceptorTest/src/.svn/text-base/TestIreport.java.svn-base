@@ -1,0 +1,102 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.util.HashMap;
+import java.util.Map;
+
+import net.sf.jasperreports.engine.JRExporterParameter;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.export.JRPdfExporter;
+import net.sf.jasperreports.view.JasperViewer;
+
+public class TestIreport {
+    public String jasperPath = "E:/work/a3/ireport/report1.jasper";
+
+    public static void main(final String[] args) throws Exception {
+        final TestIreport ti = new TestIreport();
+        // ti.getReportHTML();
+        ti.getReportPdf();
+        //ti.getReportExcel();
+    }
+
+    public void getReportPdf() throws Exception {
+        final Map<String, Object> param = new HashMap<String, Object>();
+        param.put("REPORT_CONNECTION", getConn());
+        final JasperPrint jasperPrint = JasperFillManager.fillReport(jasperPath,
+                new HashMap(),getConn());
+        final JRPdfExporter exporter = new JRPdfExporter();
+
+        exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
+        exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME,
+                "E:/work/a3/ireport/report2.pdf");
+        exporter.exportReport();
+
+
+    }
+/*
+    public void getReportExcel() throws Exception {
+        final Map<String, Object> param = new HashMap<String, Object>();
+        param.put("REPORT_CONNECTION", getConn());
+        final JasperPrint jasperPrint = JasperFillManager.fillReport(jasperPath,
+                param);
+        final File destFile = new File(
+                "E:/测试/report2.xls");
+        final JRXlsExporter exporter = new JRXlsExporter();
+        exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
+        exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME, destFile
+                .toString());
+        exporter.setParameter(JRXlsExporterParameter.IS_ONE_PAGE_PER_SHEET,
+                true);
+        exporter.exportReport();
+    }
+*/
+    /*public void getReportHTML() throws Exception {
+        final Map<String, Object> param = new HashMap<String, Object>();
+        param.put("REPORT_CONNECTION", getConn());
+        final JasperPrint jasperPrint = JasperFillManager.fillReport(jasperPath,
+                param);
+        // 使用 JRExporter 来生成 html , 很多参数可以查 api 或 ireport 的属性窗口
+        final JRExporter htmlExporter = new JRHtmlExporter();
+        final ByteArrayOutputStream htmlOut = new ByteArrayOutputStream();
+        htmlExporter.setParameter(JRHtmlExporterParameter.JASPER_PRINT,
+                jasperPrint);
+        htmlExporter.setParameter(JRHtmlExporterParameter.OUTPUT_STREAM,
+                htmlOut);
+        htmlExporter.setParameter(JRHtmlExporterParameter.CHARACTER_ENCODING,
+                "utf-8");
+        htmlExporter
+                .setParameter(JRHtmlExporterParameter.IS_USING_IMAGES_TO_ALIGN,
+                        Boolean.FALSE);
+        htmlExporter.exportReport();
+        final File outFile = new File( "F:/测试/report2.html");
+        final FileOutputStream os = new FileOutputStream(outFile);
+        os.write(htmlOut.toByteArray());
+        os.close();
+        htmlOut.close();
+    }
+*/
+    public void showReportApplet() throws Exception {
+        final Map<String, Object> param = new HashMap<String, Object>();
+        param.put("REPORT_CONNECTION", getConn());
+        final JasperPrint jasperPrint = JasperFillManager.fillReport(jasperPath,
+                param);
+        JasperViewer.viewReport(jasperPrint, false);
+    }
+
+    public Connection getConn() {
+        final String driverClass = "com.mysql.jdbc.Driver";
+        final String conStr = "jdbc:mysql://127.0.0.1/t_mike";
+        final String user = "root";
+        final String password = "nicai";
+
+        Connection conn = null;
+        try {
+            Class.forName(driverClass);
+            conn = DriverManager.getConnection(conStr, user,
+                    password);
+        } catch (final Exception e) {
+            e.printStackTrace();
+        }
+        return conn;
+    }
+}

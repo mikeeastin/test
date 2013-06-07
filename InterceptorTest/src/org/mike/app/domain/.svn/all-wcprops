@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/trunk/TaiYong/src/org/mike/app/domain
+END
+Person.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/3/trunk/TaiYong/src/org/mike/app/domain/Person.hbm.xml
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/17/trunk/TaiYong/src/org/mike/app/domain/User.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/16/trunk/TaiYong/src/org/mike/app/domain/Role.java
+END
+Person.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/TaiYong/src/org/mike/app/domain/Person.java
+END
+Address.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3/trunk/TaiYong/src/org/mike/app/domain/Address.java
+END

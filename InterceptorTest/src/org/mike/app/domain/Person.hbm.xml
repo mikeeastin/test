@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+    PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.test.Student" table="student" >
+
+        <id name="sid" type="string" unsaved-value="null" >
+            <column name="sid" sql-type="char(32)" not-null="true"/>
+            <generator class="uuid.hex"/>
+        </id>
+
+        <property name="sname">
+            <column name="sname" sql-type="varchar(16)" not-null="true"/>
+        </property>
+
+        <property name="sage">
+            <column name="sage" sql-type="varchar(16)" not-null="true"/>
+        </property>
+
+        <set name="course" table="student_course_link" cascade="all" outer-join="false">
+            <key column="sid"/>
+            <many-to-many class="com.test.Course" column="cid"/>
+        </set>
+
+    </class>
+
+</hibernate-mapping>
