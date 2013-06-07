@@ -1,0 +1,64 @@
+10
+
+dir
+0
+https://taiy.googlecode.com/svn/trunk/ext4-crud-mvc/WebContent/ext-4.0/resources/sass/.sass-cache/a0413c27cee441fd88979a77b55d40a551ec9e0f
+https://taiy.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+80ec5761-408a-1940-3090-5be55d61d02a
+
+
+
+
+
+
+
+empty
+
+_bullets.scssc
+file
+
+
+
+add
+
+_horizontal-list.scssc
+file
+
+
+
+add
+
+_inline-block-list.scssc
+file
+
+
+
+add
+
+_inline-list.scssc
+file
+
+
+
+add
+

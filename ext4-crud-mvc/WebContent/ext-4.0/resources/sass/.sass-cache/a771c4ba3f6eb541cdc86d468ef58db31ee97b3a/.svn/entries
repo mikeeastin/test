@@ -1,0 +1,64 @@
+10
+
+dir
+0
+https://taiy.googlecode.com/svn/trunk/ext4-crud-mvc/WebContent/ext-4.0/resources/sass/.sass-cache/a771c4ba3f6eb541cdc86d468ef58db31ee97b3a
+https://taiy.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+80ec5761-408a-1940-3090-5be55d61d02a
+
+
+
+
+
+
+
+empty
+
+_background-gradient.scssc
+file
+
+
+
+add
+
+_btn.scssc
+file
+
+
+
+add
+
+_frame.scssc
+file
+
+
+
+add
+
+_inner-border.scssc
+file
+
+
+
+add
+
